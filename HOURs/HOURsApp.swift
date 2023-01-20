@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct HOURsApp: App {
     @StateObject var appData: AppDataModel = AppDataModel()
-//    @EnvironmentObject var appData: AppDataModel
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

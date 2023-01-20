@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA677F1297AD660003E32D5 /* HOURsRelease.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 3FA677EB297AC1A0003E32D5 /* HOURsRelease.entitlements */; };
+		3FA677F4297AD90D003E32D5 /* Branch in Frameworks */ = {isa = PBXBuildFile; productRef = 3FA677F3297AD90D003E32D5 /* Branch */; };
 		3FD1460D29786A2900AAA3E5 /* HOURsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1460C29786A2900AAA3E5 /* HOURsApp.swift */; };
 		3FD1460F29786A2900AAA3E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1460E29786A2900AAA3E5 /* ContentView.swift */; };
 		3FD1461129786A2B00AAA3E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1461029786A2B00AAA3E5 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FA677EB297AC1A0003E32D5 /* HOURsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HOURsRelease.entitlements; sourceTree = "<group>"; };
+		3FA677EF297AC9CA003E32D5 /* apple-app-site-association */ = {isa = PBXFileReference; lastKnownFileType = text; path = "apple-app-site-association"; sourceTree = "<group>"; };
 		3FD1460929786A2900AAA3E5 /* HOURs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOURs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD1460C29786A2900AAA3E5 /* HOURsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOURsApp.swift; sourceTree = "<group>"; };
 		3FD1460E29786A2900AAA3E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA677F4297AD90D003E32D5 /* Branch in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 		3FD1460029786A2900AAA3E5 = {
 			isa = PBXGroup;
 			children = (
+				3FA677EF297AC9CA003E32D5 /* apple-app-site-association */,
 				3FD1460B29786A2900AAA3E5 /* HOURs */,
 				3FD1460A29786A2900AAA3E5 /* Products */,
 			);
@@ -58,6 +64,7 @@
 		3FD1460B29786A2900AAA3E5 /* HOURs */ = {
 			isa = PBXGroup;
 			children = (
+				3FA677EB297AC1A0003E32D5 /* HOURsRelease.entitlements */,
 				3FD1461D297A869700AAA3E5 /* View Model */,
 				3FD1461C297A868F00AAA3E5 /* Model */,
 				3FD1461B297A868700AAA3E5 /* View */,
@@ -65,7 +72,6 @@
 				3FD1460C29786A2900AAA3E5 /* HOURsApp.swift */,
 				3FD1460E29786A2900AAA3E5 /* ContentView.swift */,
 				3FD1461029786A2B00AAA3E5 /* Assets.xcassets */,
-				3FD14620297A8B0F00AAA3E5 /* Goods */,
 				3FD1461229786A2B00AAA3E5 /* Preview Content */,
 			);
 			path = HOURs;
@@ -103,13 +109,6 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
-		3FD14620297A8B0F00AAA3E5 /* Goods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Goods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +125,9 @@
 			dependencies = (
 			);
 			name = HOURs;
+			packageProductDependencies = (
+				3FA677F3297AD90D003E32D5 /* Branch */,
+			);
 			productName = HOURs;
 			productReference = 3FD1460929786A2900AAA3E5 /* HOURs.app */;
 			productType = "com.apple.product-type.application";
@@ -154,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 3FD1460029786A2900AAA3E5;
+			packageReferences = (
+				3FA677F2297AD90D003E32D5 /* XCRemoteSwiftPackageReference "ios-branch-sdk-spm" */,
+			);
 			productRefGroup = 3FD1460A29786A2900AAA3E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA677F1297AD660003E32D5 /* HOURsRelease.entitlements in Resources */,
 				3FD1461429786A2B00AAA3E5 /* Preview Assets.xcassets in Resources */,
 				3FD1461129786A2B00AAA3E5 /* Assets.xcassets in Resources */,
 			);
@@ -343,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HOURs/HOURsRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HOURs/Preview Content\"";
@@ -393,6 +400,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FA677F2297AD90D003E32D5 /* XCRemoteSwiftPackageReference "ios-branch-sdk-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BranchMetrics/ios-branch-sdk-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FA677F3297AD90D003E32D5 /* Branch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FA677F2297AD90D003E32D5 /* XCRemoteSwiftPackageReference "ios-branch-sdk-spm" */;
+			productName = Branch;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FD1460129786A2900AAA3E5 /* Project object */;
 }

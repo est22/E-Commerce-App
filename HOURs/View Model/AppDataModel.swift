@@ -19,11 +19,11 @@ class AppDataModel: ObservableObject {
         }
         
         // Update Tabs
-        if host == Tab.home.rawValue{
-            currentTab = .home
-        }
-        else if host == Tab.search.rawValue{
+        if host == Tab.search.rawValue{
             currentTab = .search
+        }
+        else if host == Tab.home.rawValue{
+            currentTab = .home
         }
         else if host == Tab.settings.rawValue{
             currentTab = .settings
@@ -41,7 +41,7 @@ class AppDataModel: ObservableObject {
         }){
             // change to search tab
             // since navigation links are in search tab
-            currentTab = .search
+            currentTab = .home
             // setting navigation link selection
             currentDetailPage = products[index].id
             return true
@@ -52,7 +52,7 @@ class AppDataModel: ObservableObject {
 
 // Tab enum
 enum Tab: String{
-    case home = "home"
     case search = "search"
+    case home = "home"
     case settings = "settings"
 }

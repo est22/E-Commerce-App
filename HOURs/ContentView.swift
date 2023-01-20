@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @StateObject var appData: AppDataModel = AppDataModel()
     @EnvironmentObject var appData: AppDataModel
     var body: some View {
+        
         Home()
             .environmentObject(appData)
     }
@@ -19,5 +19,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+
     }
 }

@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>branch_universal_link_domains</key>
+	<array>
+		<string>search</string>
+		<string>hoursapp.app.link/downloadApp</string>
+		<string>hoursapp-alternate.app.link</string>
+		<string>hoursapp.test-app.link</string>
+		<string>hoursapp-alternate.test-app.link</string>
+	</array>
+	<key>branch_key</key>
+	<dict>
+		<key>live</key>
+		<string>key_live_gp349HaAsK27KvlHKpxaphghsubyq1R8</string>
+	</dict>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

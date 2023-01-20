@@ -9,26 +9,28 @@ import SwiftUI
 
 struct Home: View {
     @EnvironmentObject var appData: AppDataModel
+
+    
     var body: some View {
         TabView(selection: $appData.currentTab) {
             
-            Text("Home")
-                .tag(Tab.home)
-                .tabItem {
-                    Image(systemName: "house.fill")
-                }
-            
-            SearchView()
-                .environmentObject(appData)
+            Text("Search")
                 .tag(Tab.search)
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
             
+            HomeView()
+                .environmentObject(appData)
+                .tag(Tab.home) // search -> home 
+                .tabItem {
+                    Image(systemName: "house.fill")
+                }
+            
             Text("Settings")
                 .tag(Tab.settings)
                 .tabItem {
-                    Image(systemName: "gearshape.fill")
+                    Image(systemName: "person.fill")
                 }
         }
     }
@@ -41,8 +43,8 @@ struct Home_Previews: PreviewProvider {
 }
 
 
-// Search View
-struct SearchView: View{
+// Home View (SearchView였음)
+struct HomeView: View{
     @EnvironmentObject var appData: AppDataModel
     
     var body: some View {
@@ -86,13 +88,8 @@ struct SearchView: View{
                     
                 }
             }
-            .navigationTitle("Search")
-            //test
-            .toolbar{
-                Button("Go to nav link 3"){
-                    appData.currentDetailPage = products[2].id
-                }
-            }
+            .navigationTitle("상도동")
+
         }
     }
    

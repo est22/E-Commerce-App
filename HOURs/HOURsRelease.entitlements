@@ -4,13 +4,15 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
+		<string>home</string>
+		<string>search</string>
 		<string>applinks:hoursapp.app.link</string>
 		<string>applinks:hoursapp.app.link/downloadApp</string>
 		<string>applinks:hoursapp-alternate.app.link</string>
 		<string>applinks:hoursapp.test-app.link</string>
 		<string>applinks:hoursapp-alternate.test-app.link</string>
 		<string>webcredentials:https://wildguess.tistory.com/entry/apple-app-site-association</string>
-		<string>webcredentials:example.com</string>
+		<string>hoursapp://</string>
 	</array>
 </dict>
 </plist>
